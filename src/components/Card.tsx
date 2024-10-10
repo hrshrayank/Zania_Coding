@@ -5,7 +5,10 @@ export const Card = () => {
   return (
     <div className="border-2">
       {response?.tasks?.map((data, index) => (
-        <div className="flex border bg-slate-200 justify-between p-2">
+        <div
+          className="flex border bg-slate-200 justify-between p-2"
+          key={index}
+        >
           <div>
             <div>Title: {data.title}</div>
             <div>Description:{data.description}</div>
